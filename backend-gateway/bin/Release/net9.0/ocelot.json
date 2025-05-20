@@ -1,0 +1,52 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/v1/Flight/query",
+      "DownstreamHostAndPorts": [
+        { "Host": "anil-airline-api.azurewebsites.net", "Port": 443 }
+      ],
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/flight/query",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/Ticket/buy",
+      "DownstreamHostAndPorts": [
+        { "Host": "anil-airline-api.azurewebsites.net", "Port": 443 }
+      ],
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/ticket/buy",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/Ticket/checkin",
+      "DownstreamHostAndPorts": [
+        { "Host": "anil-airline-api.azurewebsites.net", "Port": 443 }
+      ],
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/ticket/checkin",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/Ticket/passenger-list/{flightNumber}/{date}/{pageNumber}",
+      "DownstreamHostAndPorts": [
+        { "Host": "anil-airline-api.azurewebsites.net", "Port": 443 }
+      ],
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/ticket/passenger-list/{flightNumber}/{date}/{pageNumber}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/Login/login",
+      "DownstreamHostAndPorts": [
+        { "Host": "anil-airline-api.azurewebsites.net", "Port": 443 }
+      ],
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://airline-gateway.azurewebsites.net"
+  }
+}

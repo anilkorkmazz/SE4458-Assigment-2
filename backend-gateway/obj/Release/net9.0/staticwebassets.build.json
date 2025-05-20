@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jWM0oB/23ipR4VwP6uWMYB3DUQ4HxMqsoW4SJBcsGdw=",
+  "Source": "backend-gateway",
+  "BasePath": "_content/backend-gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
