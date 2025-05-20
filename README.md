@@ -37,6 +37,7 @@ Bot Message written to Firestore
         ↓
 UI automatically updates in real time
 
+```
 ---
 
 ## 📝 Assumptions
