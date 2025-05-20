@@ -53,7 +53,7 @@ UI automatically updates in real time
 
 ---
 
-### ✈️ Check Available Flights
+### ✈️ Query Flight
 
 **User Input:**
 
