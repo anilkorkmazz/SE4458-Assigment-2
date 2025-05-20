@@ -1,17 +1,18 @@
 # ✈️ Airline Ticketing AI Agent Chat App
 
-This project implements an **AI-powered chat assistant** for airline ticketing operations. It fulfills the requirements of **SE4458 - Assignment 2** by integrating OpenAI with existing airline APIs behind a .NET-based API Gateway using Ocelot.
+This project implements an **AI-powered chatbot** for a flight ticketing system.  
+The chatbot interprets **natural language messages** and uses **OpenAI’s GPT-3.5 model** to identify the user’s intent.  
+All requests are routed through a **.NET Ocelot API Gateway**, which then interacts with the **Midterm APIs deployed on Azure**.
 
-## 🔍 Features
+---
 
-- Natural language interface (via OpenAI GPT-3.5)
-- Handles 4 intents:
-  - `QueryFlight`
-  - `BuyTicket`
-  - `CheckIn`
-  - `QueryPassengerList`
-- Chat UI updates in real time via Firestore
-- All API calls go through a centralized **.NET Gateway** using Ocelot
+### ✅ Supported Intents
+
+- ✈️ **QueryFlight** – Find available flights  
+- 🎫 **BuyTicket** – Purchase tickets  
+- 🪪 **CheckIn** – Assign seat number to passenger  
+- 👥 **QueryPassengerList** – View passengers on a flight  
+
 
 ---
 
@@ -35,3 +36,13 @@ Midterm API Response
 Bot Message written to Firestore
         ↓
 UI automatically updates in real time
+
+---
+
+## 📝 Assumptions
+
+- User identity is static (no login required in frontend)
+- JWT authentication is used in backend, token cached for 10 mins
+- All APIs (except initial login) are accessed strictly via the Gateway as per assignment rules
+
+---
