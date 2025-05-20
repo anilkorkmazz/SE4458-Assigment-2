@@ -6,7 +6,7 @@ All requests are routed through a **.NET Ocelot API Gateway**, which then intera
 
 ---
 
-### ✅ Supported Intents
+###  Supported Intents
 
 - ✈️ **QueryFlight** – Find available flights  
 - 🎫 **BuyTicket** – Purchase tickets  
@@ -16,7 +16,7 @@ All requests are routed through a **.NET Ocelot API Gateway**, which then intera
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
 User Message (React Chat UI)
@@ -40,7 +40,7 @@ UI automatically updates in real time
 ```
 ---
 
-## 📝 Assumptions
+##  Assumptions
 
 - User identity is static (no login required in frontend)
 - JWT authentication is used in backend, token cached for 10 mins
@@ -49,7 +49,7 @@ UI automatically updates in real time
 ---
 
 
-## 🧪 Sample Test Messages
+##  Sample Test Messages
 
 
 
@@ -59,7 +59,7 @@ UI automatically updates in real time
 
 > Is there a flight for 20 people from Istanbul to New York on September 15, 2025 between 08:00 - 12:00?
 
-**Bot Output:**
+**Output:**
 
 ✈️ Available Flights:  
 1. Flight Code: FL-0010  
@@ -75,7 +75,7 @@ UI automatically updates in real time
 
 > Buy a ticket for flight FL-0003 on September 15, 2025 for Tutku
 
-**Bot Output:**
+**Output:**
 
 🎫 Ticket(s) created:  
 1. Ticket Code: TK-D1E133
@@ -88,7 +88,7 @@ UI automatically updates in real time
 
 > Could you please check the passenger list for FL-0001 dated September 15, 2025?
 
-**Bot Output:**
+**Output:**
 
 - Ali — Seat No: 1  
 - Veli — Seat No: 2  
@@ -96,23 +96,23 @@ UI automatically updates in real time
 
 ---
 
-### ✅ Check-In
+### Check-In
 
 **User Input:**
 
 > Check in for the flight FL-0003 on September 15, 2025 for the passenger named Nuray
 
-**Bot Output:**
+**Output:**
 
-✅ Checked in successfully
-
----
-
-## ⚠️ Challenges Encountered
+ Checked in successfully
 
 ---
 
-### 🚧 Azure App Service Issue and Migration to Vercel
+##  Challenges Encountered
+
+---
+
+###  Azure App Service Issue and Migration to Vercel
 
 **Issue:**  
 Initially, I tried to deploy the frontend application using Azure App Service. However, the page wouldn't load at all and kept throwing errors. Since there were no clear error messages, it was difficult to diagnose the problem.
@@ -122,7 +122,7 @@ Due to these issues, I migrated the frontend to Vercel. Vercel provided a much s
 
 ---
 
-### 🔧 500 Internal Server Error in Gateway
+###  500 Internal Server Error in Gateway
 
 **Issue:**  
 During integration, we encountered an unexpected 500 error in the Gateway.
