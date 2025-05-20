@@ -17,24 +17,21 @@ This project implements an **AI-powered chat assistant** for airline ticketing o
 
 ## 🏗️ Architecture
 
+```text
 User Message (React Chat UI)
         ↓
- Message written to Firestore
+Message written to Firestore
         ↓
 POST to API Gateway (/api/agent/message)
         ↓
-OpenAiService.cs → GPT-3.5 API
+OpenAiService.cs → OpenAI GPT-3.5 API
         ↓
-Extracted Intent + Parameters (AiResponseDto)
+Extracted Intent & Parameters (AiResponseDto)
         ↓
-AirlineApiService.cs → Call Midterm API via Ocelot
+AirlineApiService.cs → Midterm API (via Ocelot)
         ↓
-API Response from:
-  - /api/flight/query
-  - /api/ticket/buy
-  - /api/ticket/checkin
-  - /api/ticket/passenger-list/{...}
+Midterm API Response
         ↓
-Response written to Firestore (as bot message)
+Bot Message written to Firestore
         ↓
-Real-time UI update in ChatWindow (React)
+UI automatically updates in real time
