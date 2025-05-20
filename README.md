@@ -143,3 +143,12 @@ Improved logging and added better exception handling, which helped identify and 
 *(Replace the URL above with your actual Google Drive or YouTube link)*
 
 
+##  Deployment Links
+
+| Layer         | URL                                                                 |
+|---------------|----------------------------------------------------------------------|
+| 🖥️ Frontend     | [https://se-4458-assignment-2.vercel.app](https://se-4458-assignment-2.vercel.app)         |
+| 🌐 API Gateway | [https://airline-gateway.azurewebsites.net](https://airline-gateway.azurewebsites.net)     |
+| 📡 Airline API | [https://anil-airline-api.azurewebsites.net/swagger](https://anil-airline-api.azurewebsites.net/swagger) |
+
+
