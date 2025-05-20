@@ -51,7 +51,7 @@ UI automatically updates in real time
 
 ## 🧪 Sample Test Messages
 
----
+
 
 ### ✈️ Query Flight
 
@@ -107,4 +107,32 @@ UI automatically updates in real time
 ✅ Checked in successfully
 
 ---
+
+## ⚠️ Challenges Encountered
+
+---
+
+### 🚧 Azure App Service Issue and Migration to Vercel
+
+**Issue:**  
+Initially, I tried to deploy the frontend application using Azure App Service. However, the page wouldn't load at all and kept throwing errors. Since there were no clear error messages, it was difficult to diagnose the problem.
+
+**Solution:**  
+Due to these issues, I migrated the frontend to Vercel. Vercel provided a much smoother deployment process and faster setup for the React-based project. The overall deployment became more stable and efficient.
+
+---
+
+### 🔧 500 Internal Server Error in Gateway
+
+**Issue:**  
+During integration, we encountered an unexpected 500 error in the Gateway.
+
+**Root Cause:**  
+Deserialization issues in OpenAI responses and missing fields in `AiResponseDto`.
+
+**Resolution:**  
+Improved logging and added better exception handling, which helped identify and resolve the issue.
+
+---
+
 
